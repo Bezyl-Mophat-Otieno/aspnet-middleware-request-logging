@@ -1,0 +1,6 @@
+@RequestLoggingMiddleware_HostAddress = http://localhost:5277
+
+GET {{RequestLoggingMiddleware_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
