@@ -1,3 +1,6 @@
+using RequestLoggingMiddleware.Extensions;
+using RequestLoggingMiddleware.Middlewares;
+
 namespace RequestLoggingMiddleware;
 
 public class Program
@@ -5,6 +8,11 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        
+        // Add default logging
+        builder.Logging.ClearProviders();
+        builder.Logging.AddConsole();
+        builder.Logging.AddFile("Logs/app-{Date}.txt");
 
         // Add services to the container.
         builder.Services.AddAuthorization();
@@ -13,6 +21,9 @@ public class Program
         builder.Services.AddOpenApi();
         builder.Services.AddSwaggerGen();
         builder.Services.AddControllers();
+
+        
+        
 
         var app = builder.Build();
 
@@ -24,12 +35,14 @@ public class Program
             app.UseSwaggerUI();
         }
 
+        app.UseRequestLogger();
+
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
 
         app.MapControllers();
-
+        
 
 
         app.Run();
