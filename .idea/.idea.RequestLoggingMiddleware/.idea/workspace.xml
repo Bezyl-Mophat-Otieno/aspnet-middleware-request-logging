@@ -9,11 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c80c1b-421c-416a-a9ab-90e70486024c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RequestLoggingMiddleware/Extensions/RequestLoggerExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RequestLoggingMiddleware/Middlewares/RequestLogger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RequestLoggingMiddleware/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RequestLoggingMiddleware/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequestLoggingMiddleware/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RequestLoggingMiddleware/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RequestLoggingMiddleware/RequestLoggingMiddleware.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RequestLoggingMiddleware/RequestLoggingMiddleware.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RequestLoggingMiddleware/Middlewares/RequestLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RequestLoggingMiddleware/Middlewares/RequestLogger.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +115,8 @@
       <updated>1758477660407</updated>
       <workItem from="1758477662193" duration="5349000" />
       <workItem from="1758518633266" duration="1359000" />
-      <workItem from="1758564208369" duration="3370000" />
+      <workItem from="1758564208369" duration="3602000" />
+      <workItem from="1758686276992" duration="487000" />
     </task>
     <servers />
   </component>
